@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wodle</title>
+    <link rel="stylesheet" href="wodleStyle-min.css">
+</head>
+<body>
+    <div class="rulesforwordle">
+        <div class="rule_content" style="text-align: left;">
+            <div class="how">
+                <h3>HOW TO PLAY <span><img class="cross" src="cross.png" alt=""></span></h3>
+            </div>
+            <p>Guess the <b>WORDLE</b> in six tries.</p><br>
+            <p>Each guess must be a valid five-letter word. Hit the enter button to submit.</p><br>
+            <p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p><br>
+            <p><b>Examples</b></p>
+            <div class="example_box">
+              <span class="t-correct">W</span>
+              <span>O</span>
+              <span>R</span>
+              <span>L</span>
+              <span>D</span>
+            </div>
+            <p>The letter <b>W</b> is in the word and in the correct spot.</p>
+            <div class="example_box">
+              <span>G</span>
+              <span class="t-present">R</span>
+              <span>E</span>
+              <span>E</span>
+              <span>N</span>
+            </div>
+            <p>The letter <b>R</b> is in the word but in the wrong spot.</p>
+            <div class="example_box">
+              <span>V</span>
+              <span >A</span>
+              <span>G</span>
+              <span class="t-absent">U</span>
+              <span>E</span>
+            </div>
+            <p>The letter <b>U</b> is not in the word in any spot.</p><br><hr><br>
+            <p><b>A new WORDLE will be available after refreshing the page!</b></p>
+        </div>
+    </div>
+     <div class="nabvar">
+        <h1><img class="img" src="about.png" alt=""> Wordle</h1>
+     </div>
+     <div id="word_board"></div>
+     <h1 id="answer"></h1>
+     <div id="keyboard"></div>
+
+    <script src="wodle-min.js"></script>
+</body>
+</html>
